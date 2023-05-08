@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gbp="http://schemas.android.com/apk/res-auto"
+    tools:context=".details_food">
+
+    <!--Recycler view for displaying
+        our data from Firestore-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVCoursesDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+        android:id="@+id/idProgressBarDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        gbp:type="folding_circles"/>
+    <!--Progress bar for showing loading screen-->
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/idProgressBar"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerInParent="true" />-->
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:gravity="start"
+        android:layout_margin="15dp"
+        android:paddingEnd="15dp"
+        android:background="@drawable/imag_shape"
+        android:orientation="horizontal">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/doctor_iv_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10dp"
+            android:layout_marginBottom="30dp"
+            app:civ_shadow_color="#3f51b5"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doctor_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18ssp"
+                android:text=""
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_8sdp"/>
+
+            <TextView
+                android:id="@+id/doctor_tv_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_18ssp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/doctor_tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_18ssp"
+                android:text="" />
+            <TextView
+                android:id="@+id/doctor_tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_18ssp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/doctor_tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_18ssp"
+                android:text="" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/addDelLayout"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/tempDoctor_iv_edit"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/holo_green_light"
+            android:src="@drawable/ic_baseline_edit_24"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/tempDoctor_iv_delete"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@android:color/holo_red_dark"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:src="@drawable/ic_baseline_delete_24"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+</LinearLayout>

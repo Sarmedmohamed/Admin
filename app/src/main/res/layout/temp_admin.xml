@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#D8BDBD"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="@dimen/_4sdp"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/temp_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:scaleType="centerCrop"
+             />
+
+        <TextView
+            android:id="@+id/temp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_30ssp"
+            />
+
+        <TextView
+            android:id="@+id/temp_name_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_30ssp"
+           />
+
+        <TextView
+            android:id="@+id/temp_many_calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_30ssp"
+             />
+
+        <TextView
+            android:id="@+id/temp_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_30ssp"
+            />
+        <LinearLayout
+            android:id="@+id/addDelLayout"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:layout_gravity="start"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/tempAdmin_iv_edit"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/holo_green_light"
+                android:src="@drawable/ic_baseline_edit_24"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/tempAdmin_iv_delete"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@android:color/holo_red_dark"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:src="@drawable/ic_baseline_delete_24"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

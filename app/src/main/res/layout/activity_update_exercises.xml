@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Admin_exercises_add">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/UpdateExercises_ImGif_imagesGif"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:scaleType="centerCrop"
+                android:background="@color/purple_500"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/UpdateExercises_tv_ExerciseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:ems="10"
+                    android:hint="Exercise name"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <EditText
+                    android:id="@+id/UpdateExercises_tv_exerciseDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:ems="10"
+                    android:hint="Exercise duration"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/UpdateExercises_tv_descriptionMeal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:ems="10"
+                    android:hint="Description of an exercise"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:padding="@dimen/_30sdp"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/UpdateExercises_btn_cencel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16ssp"
+                    android:background="@drawable/button_canel"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textAllCaps="false"
+                    android:text="Cancel"  />
+                <Button
+                    android:id="@+id/UpdateExercises_btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textSize="@dimen/_16ssp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_save"
+                    android:layout_marginStart="@dimen/_50sdp"
+                    android:textColor="@color/white"
+                    android:text="Save" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

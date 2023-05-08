@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin_doctor_add">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/doctor_add_iv_image"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/user"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="@dimen/_4sdp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#3f51b5"
+        android:layout_gravity="center"
+        app:civ_shadow_radius="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/doctor_add_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/doctor_add_tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:ems="10"
+            android:hint="Number"
+            android:inputType="phone"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/doctor_add_tv_emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/doctor_add_tv_Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+        <EditText
+            android:id="@+id/doctor_add_tv_aDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="1000"
+            android:hint="The a description"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/doctor_add_btn_cencel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textSize="@dimen/_18ssp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_save"
+            android:textColor="@color/white"
+            android:text="Cancel" />
+        <Button
+            android:id="@+id/doctor_add_btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textSize="@dimen/_18ssp"
+            android:layout_marginStart="@dimen/_50ssp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_save"
+            android:textColor="@color/white"
+            android:text="Save" />
+
+    </LinearLayout>
+</LinearLayout>
